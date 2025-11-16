@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자소서 글자수 계산기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-buttons">
+        <button id="copyAllText" class="btn-copy-text">📄 텍스트 복사</button>
+        <button id="copyAllChars" class="btn-copy">字 글자수 복사</button>
+        <button id="copyAllBytes" class="btn-copy">B 바이트 복사</button>
+        <button id="clearAll" class="btn-secondary">전체 삭제</button>
+        <button id="addField" class="btn-primary">+ 문항 추가</button>
+      </div>
+    </header>
+    
+    <div id="fieldsContainer">
+      <!-- 기본 필드 4개 -->
+      <div class="field-wrapper" data-id="1">
+        <div class="field-header">
+          <span class="field-number">문항 1</span>
+          <div class="field-actions">
+            <button class="btn-copy-field" data-field-id="1" title="텍스트 복사">📄</button>
+            <button class="btn-copy-chars" data-field-id="1" title="공백포함 글자수 복사">字</button>
+            <button class="btn-copy-bytes" data-field-id="1" title="바이트 복사">B</button>
+            <button class="btn-clear" data-field-id="1" title="내용 지우기">🗑️</button>
+          </div>
+          <div class="field-stats">
+            <span class="stat-value chars">0자</span>
+            <span class="stat-divider">/</span>
+            <span class="stat-value bytes">0B</span>
+          </div>
+        </div>
+        <textarea class="text-field" placeholder="자기소개서 내용을 입력하세요..."></textarea>
+      </div>
+      
+      <div class="field-wrapper" data-id="2">
+        <div class="field-header">
+          <span class="field-number">문항 2</span>
+          <div class="field-actions">
+            <button class="btn-copy-field" data-field-id="2" title="텍스트 복사">📄</button>
+            <button class="btn-copy-chars" data-field-id="2" title="공백포함 글자수 복사">字</button>
+            <button class="btn-copy-bytes" data-field-id="2" title="바이트 복사">B</button>
+            <button class="btn-clear" data-field-id="2" title="내용 지우기">🗑️</button>
+          </div>
+          <div class="field-stats">
+            <span class="stat-value chars">0자</span>
+            <span class="stat-divider">/</span>
+            <span class="stat-value bytes">0B</span>
+          </div>
+        </div>
+        <textarea class="text-field" placeholder="자기소개서 내용을 입력하세요..."></textarea>
+      </div>
+      
+      <div class="field-wrapper" data-id="3">
+        <div class="field-header">
+          <span class="field-number">문항 3</span>
+          <div class="field-actions">
+            <button class="btn-copy-field" data-field-id="3" title="텍스트 복사">📄</button>
+            <button class="btn-copy-chars" data-field-id="3" title="공백포함 글자수 복사">字</button>
+            <button class="btn-copy-bytes" data-field-id="3" title="바이트 복사">B</button>
+            <button class="btn-clear" data-field-id="3" title="내용 지우기">🗑️</button>
+          </div>
+          <div class="field-stats">
+            <span class="stat-value chars">0자</span>
+            <span class="stat-divider">/</span>
+            <span class="stat-value bytes">0B</span>
+          </div>
+        </div>
+        <textarea class="text-field" placeholder="자기소개서 내용을 입력하세요..."></textarea>
+      </div>
+      
+      <div class="field-wrapper" data-id="4">
+        <div class="field-header">
+          <span class="field-number">문항 4</span>
+          <div class="field-actions">
+            <button class="btn-copy-field" data-field-id="4" title="텍스트 복사">📄</button>
+            <button class="btn-copy-chars" data-field-id="4" title="공백포함 글자수 복사">字</button>
+            <button class="btn-copy-bytes" data-field-id="4" title="바이트 복사">B</button>
+            <button class="btn-clear" data-field-id="4" title="내용 지우기">🗑️</button>
+          </div>
+          <div class="field-stats">
+            <span class="stat-value chars">0자</span>
+            <span class="stat-divider">/</span>
+            <span class="stat-value bytes">0B</span>
+          </div>
+        </div>
+        <textarea class="text-field" placeholder="자기소개서 내용을 입력하세요..."></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
