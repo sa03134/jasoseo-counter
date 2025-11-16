@@ -201,10 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 전체 삭제 (내용만 삭제, 문항은 유지)
 function clearAllFields() {
-  if (!confirm('모든 문항의 내용을 삭제하시겠습니까?')) {
-    return;
-  }
-  
   const fieldsContainer = document.getElementById('fieldsContainer');
   const allFields = fieldsContainer.querySelectorAll('.field-wrapper');
   
